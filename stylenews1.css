@@ -1,0 +1,140 @@
+/* Reset default margins/padding */
+     
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Mulish", sans-serif;
+      line-height: 1.5;
+      background-color: white;
+      color: #000000;
+    }
+
+    header, nav, main, footer {
+      max-width: 1000px;   /* keeps content centered */
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: url("divas_weekly_bg.png") no-repeat center/cover;
+      color: black;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    a { 
+      color: black;
+      text-decoration: none;
+     }
+    .tagline { 
+      color: black;
+      font-size: 15px; 
+     }
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #ff0dde;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+       nav {
+      background: black;
+      color: black;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    main {
+      background: white;
+      padding: 30px;
+      min-height: 300px;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+       width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding within the 100% width */
+      
+      font-size: 14px;
+    }
+     
+     p {
+     font-size: large;
+      text-align: center;
+     }
+
+     h3 {
+     font-size: 23px;
+     }
+
+     h4 {
+     font-size: 20px;
+     }
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 3fr 3fr;
+  gap: 5px;
+  padding: 5px;
+}
+
+.container > div.menu {
+  grid-area: menu;
+}
+
+.container > div.content {
+  grid-area: content;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 10px;
+  height: auto;
+  width: auto;
+}
