@@ -92,7 +92,6 @@
      
      p {
      font-size: medium;
-      text-align: center;
      }
 
      h3 {
@@ -276,6 +275,7 @@
   grid-column: span 2;
   margin-bottom: 10px;
 }
+
 
 
 
